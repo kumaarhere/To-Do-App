@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css?family=Monoton");
+
+body{
+background-image: url(img/dan-cook-YtKzcV4Y_Dk-unsplash.jpg);
+background-size: cover;
+}
+.title{
+    font-size: 30px;
+    font-family: Monoton;
+    text-align: center;
+    text-shadow: 0px 6px 10px rgb(17, 17, 17);
+    color:black;
+    border-radius: 20px;
+    
+    
+}
+.container{
+    text-align: center;
+    padding:50px;
+
+    
+}
+#list-entry{
+    font-size: 15px;
+    border-radius: 20px;
+    padding:15px;
+    font-weight: 600;
+    box-shadow: 3px 3px 4px rgb(13, 13, 13);
+}
+#list-add{
+    color:#fff;
+    font-size: 20px;
+    border-radius: 6px;
+    padding:4px 20px;
+    margin-left:3px;
+    background-color:#06038D;
+    opacity: .6;
+    pointer-events: none;
+}
+#list-add.active{
+    opacity: 1;
+    pointer-events: all;
+}
+.tasks{
+    width:60%;
+    margin-top: 6%;
+    margin-left:20%;
+    
+}
+.task-items{
+    padding: 8px 20px;
+    margin-bottom: 20px;
+    border-radius:9px;
+    box-shadow:0 10px 30px grey;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(87, 155, 155);
+
+}
+.task-items p{
+    font-size:18px;
+    font-weight: 600;
+    color:#000;
+    letter-spacing: 1px;
+}
+.task-items.completed p{
+   text-decoration: line-through;
+   color: #000;
+   opacity:.6;
+}
+.act-btn{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    gap:15px;
+    cursor: pointer;
+}
+.fa-trash{
+    color: rgb(141, 12, 12);
+}
+.fa-square-check{
+    color:rgb(29, 78, 182);
+    font-size: 24px;
+}
+
+
+@media (max-width: 768px){
+    body{
+        background-image: url(img/dan-cook-YtKzcV4Y_Dk-unsplash.jpg);
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-attachment: fixed;
+    }
+    #list-add{
+        color:#fff;
+        margin-top:10px;
+        margin-left:20%;
+        text-align: center;
+        padding:6px 20px;
+        box-shadow: 0px 4px 6px rgb(104, 129, 163);
+        font-weight: 600;
+        font-family: cursive;
+    }
+    .task-items{
+        margin-left: 60px;
+        width:100%;
+    }
+    .tasks{
+        margin-left: 5%;
+    }
+    #list-entry{
+        margin-right:12%;
+    }
+    .title{
+      margin-left: 20%;
+    }
+}
