@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Monoton");
 
 body{
-background-image: url(/img/dan-cook-YtKzcV4Y_Dk-unsplash.jpg);
+background-image: url(img/dan-cook-YtKzcV4Y_Dk-unsplash.jpg);
 background-size: cover;
 }
 .title{
@@ -83,11 +83,25 @@ background-size: cover;
     color:rgb(29, 78, 182);
     font-size: 24px;
 }
+footer{
+    color:#151515;
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: right;
+}
+footer a{
+    color:bisque;
+    text-decoration: none;
+}
+footer a:hover{
+    color: #19dd67;
+}
 
 
 @media (max-width: 768px){
     body{
-        background-image: url(/img/dan-cook-YtKzcV4Y_Dk-unsplash.jpg);
+        background-image: url(img/dan-cook-YtKzcV4Y_Dk-unsplash.jpg);
         background-repeat: no-repeat;
         background-position: 50%;
         background-attachment: fixed;
@@ -95,24 +109,38 @@ background-size: cover;
     #list-add{
         color:#fff;
         margin-top:10px;
-        margin-left:20%;
+        margin-left:25%;
         text-align: center;
         padding:6px 20px;
         box-shadow: 0px 4px 6px rgb(104, 129, 163);
         font-weight: 600;
-        font-family: cursive;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
     .task-items{
-        margin-left: 60px;
         width:100%;
     }
     .tasks{
         margin-left: 5%;
+        width:100%;
     }
     #list-entry{
         margin-right:12%;
     }
     .title{
       margin-left: 20%;
+    }
+    footer{
+        color:#151515;
+        position:absolute;
+        bottom:1%;
+        width: 100%;
+        text-align: right;
+    }
+    footer a{
+        color:bisque;
+        text-decoration: none;
+    }
+    footer a:hover{
+        color: #19dd67;
     }
 }
