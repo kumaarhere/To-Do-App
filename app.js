@@ -13,7 +13,7 @@ input.addEventListener('keyup', () => {
 
 addBtn.addEventListener('click', () =>{
   if (input.value.trim() === "") {
-    alert("please enter a task To-Do");
+    alert("please enter a task To-Do!");
 } else {
     let newitem = document.createElement('div');
     newitem.classList.add('task-items');
