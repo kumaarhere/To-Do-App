@@ -26,17 +26,28 @@ addBtn.addEventListener('click', () =>{
     `;
     tasks.appendChild(newitem);
     input.value = "";
+    savData()
 }});
  //delete task from list
   
     tasks.addEventListener('click', (e) => {
         if (e.target.classList.contains('fa-trash')){
             e.target.parentElement.parentElement.remove();
+            savData()
         }
 })
     tasks.addEventListener('click', (e) => {
         if (e.target.classList.contains('fa-square-check')){
             e.target.parentElement.parentElement.classList.
             toggle('completed');
+            savData()
         }
     });
+
+    function savData(){
+        localStorage.setItem("data", tasks.innerHTML);
+    }
+    function  displayTask(){
+        tasks.innerHTML = localStorage.getItem("data");
+    }
+    displayTask();
